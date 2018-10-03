@@ -174,6 +174,7 @@ def player_stats(player_name)
     game_hash.each do |location, team_info|
       team_info[:players].each do |name, data|
         if shoe < data[:shoe]
+          shoe = data[:shoe]
           rebounds = data[:rebounds]
         end
       end
