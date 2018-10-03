@@ -134,6 +134,7 @@ def player_by_number(number)
   end
   end
 end
+end
 player_by_number(33)
 
 def shoe_size(player_name)
