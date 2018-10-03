@@ -118,7 +118,6 @@ end
 
 def num_points_scored(player_name)
 game_hash.each do |location, team_info|
-  binding.pry
 if team_info[:players].include?(player_name)
   return team_info[:players][player_name][:points]
 end
