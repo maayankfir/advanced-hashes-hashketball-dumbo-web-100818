@@ -150,7 +150,7 @@ def team_names
 
 def player_numbers(team_name)
   numbers = []
-  game_hash.each do |location, team_info| 
+  game_hash.each do |location, team_info|
     if team_info[:team_name].include?(team_name)
       team_info[:players].each do |name, data|
         numbers << data[:number]
@@ -184,7 +184,7 @@ def player_stats(player_name)
 
   def most_points_scored
     points = 0
-    player = nil
+    player = " "
     game_hash.each do |location, team_info|
       team_info[:players].each do |name, data|
         if points < data[:points]
