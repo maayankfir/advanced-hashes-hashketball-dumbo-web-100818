@@ -127,8 +127,9 @@ end
 def player_by_number(number)
   game_hash.each do |location, team_info|
     binding.pry
-    if team_info[:number].include?(number)
-    return team_info[:players]
+    if team_info[:players][:numer].include?(number)
+    team_info.each do |name, data|
+      return name
   end
   end
 end
