@@ -1,3 +1,4 @@
+
 require "pry"
 def game_hash
   game_hash = {
@@ -127,9 +128,9 @@ end
 def player_by_number(number)
   game_hash.each do |location, team_info|
 team_info.each do |name, data|
+  binding.pry
     if team_info[:players][:number] == number
-  
-      binding.pry
+    
       return name
   end
   end
