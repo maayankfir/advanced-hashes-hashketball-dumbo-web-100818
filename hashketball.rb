@@ -128,7 +128,7 @@ end
 def player_by_number(number)
   game_hash.each do |location, team_info|
 team_info[:players].each do |name, data|
-  
+
     if data[:number] == number
 
       return name
@@ -136,7 +136,7 @@ team_info[:players].each do |name, data|
   end
 end
 end
-player_by_number(33)
+puts player_by_number(33)
 
 def shoe_size(player_name)
   game_hash.each do |location, team_info|
